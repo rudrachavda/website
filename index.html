@@ -1,100 +1,151 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>Rudra Chavda</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X UA-Compatible" content = "IE-edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98e716fad8.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<!-- Navigation bar -->
-<nav>
-    <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#skills">My Skills</a></li>
-    <li><a href="#projects">My Projects</a></li>
-    <li><a href="#contact">Contact Me</a></li>
-</ul>
-</nav>
-
-<!-- Header section -->
-<h1 class="h2" align="center">
-    <img src="images/jpg.jpg" height="280px" width="220px">
-    <br>
-    My Portfolio
-    </br>
-</h1>
-
-<!-- About Me section -->
-<div class="AboutMe" id="about">
-    <h2 align="center" > About Me </h2> 
-    <p> Hello, my name is Rudra Chavda. I like coding in Java and Python. This website is dedicated to showcasing my work and sharing my experiences, as well as some information about myself. </p>
-    <b>Interests:</b>
-    <ul>
-    <li>Swimming/Waterpolo</li>
-    <li>Cooking</li>
-    <li>Lego</li>
-    <li>Coding</li>
-    <li>Working Out</li>
-    <li>Scouting</li>
-    <li>Videogames</li>
-    <img src= "images/D2logo.jpeg" height="50px" width="50px">
-    <img src="images/coding.gif" height="50px" width="50px">
-    <img src="images/outdoors.jpeg" height="50px" width="50px">
-    </ul>
+<!--------------------- HEADER --------------------->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li> <a href="#" > Home </a> </li>
+                <li> <a href="#"> About </a> </li>
+                <li> <a href="#"> Projects </a> </li>
+                <li> <a href="#"> Git </a> </li>
+                <li> <a href="#"> Contact </a> </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Coder / CS student</p>
+            <h1>Hi, I'm <span>Rudra Chavda</span></h1>
+        </div>
+    </div>
 </div>
 
-<!-- Education section -->
-<div class="Education" id="education">
-    <h2 align="center" > Education</h2>
-    <b>High School:</b> Mountain House High School 2024
-    <br>
-    I completed the entire CS pathway offered at my high school.
-    <ul>
-    <li>Computer Science Essentials</li>
-    <li>AP Computer Science Principles</li>
-    <li>AP Computer Science Advanced</li>
-    <li>Applied Computer Science</li>
-    <img src="images/CBL.jpeg" height="50px" width="50px">
-    <img src="images/mhhs.jpeg" height="50px" width="50px">
-    </ul>
-    <b>Dual Enrollment:</b> Delta College
-    <br>
-    Dual Enrolled for College Courses
-    <ul>
-    <li>Economics</li>
-    <li>Government</li>
-    </ul>
+<!--------------------- About --------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/LRG_DSC05803.jpg" class = "me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eum officiis sint accusantium quia consectetur magni architecto molestiae ducimus inventore 
+                    debitis! In temporibus aut, ipsa ad assumenda sunt quaerat. Quaerat, provident. Lorem ipsum dolor,
+                    sit amet consectetur adipisicing elit. Explicabo possimus doloribus molestias provident. 
+                    Illum quas odit asperiores sunt. 
+                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>2021 - 2022</span><br>Building Android/IOS apps</li>
+                        <li><span>2022 - 2023</span><br>Mountain House Directory</li>
+                        <li><span>2023 - 2024</span><br>Job at Kumon</li>
+                        <li><span>2023 - 2024</span><br>UI/UX internship at Fassur</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2020 - 2024</span><br>Mountain House High School</li>
+                        <li><span>2022 - 2023</span><br>San Joaquin Delta Dual Enrollment</li>
+                        <li><span>2024 - 2028</span><br>CS + X University of Illinois U-C</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Skills section -->
-<div class="Skills" id="skills">
-    <h2 align="center" > My Skills </h2>
-    <p>I know how to code in Java, Python, Basic HTML, CSS, and more. I am also working on many other projects and starting to learn and expand my skills in AI and ML. I also know how too diversify my code and stay up to date with projects.</p>
-    <img src="images/AI.jpeg" height="50px" width="50px">
-    <img src="images/java.jpeg" height="50px" width="50px">
-    <img src="images/python.jpeg" height="50px" width="50px">
+<!--------------------- Projects --------------------->
+<div id = "projects">
+    <div class="container">
+        <h1 class = "sub-title">My Projects </h1>
+        <div class="projects-list">
+            <div>
+                <i class="far fa-hand-lizard"></i>
+                <h2>Hand Recognition</h2>
+                <p>Lorem ipsum dolor sit amit, consectetur adipisicing elit. Sed nulla nibh, 
+                tincident sit amet sapien quis</p>
+                <a href="#"> Learn More </a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Directory</h2>
+                <p>Lorem ipsum dolor sit amit, consectetur adipisicing elit. Sed nulla nibh, 
+                tincident sit amet sapien quis</p>
+                <a href="#"> Learn More </a>
+            </div>
+            <div>
+                <i class="fas fa-code-branch"></i>
+                <h2>PathFinder</h2>
+                <p>Lorem ipsum dolor sit amit, consectetur adipisicing elit. Sed nulla nibh, 
+                tincident sit amet sapien quis</p>
+                <a href="#"> Learn More </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--------------------- Portfolio --------------------->
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Adventures </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/adventure1.jpg">
+            </div>
+            <div class="work">
+                <img src="images/adventure1.jpg">
+            </div>
+            <div class="work">
+                <img src="images/adventure1.jpg">
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Projects section -->
-<div class="Projects" id="projects">
-    <h2 align="center"> My Projects:</h2>
-    <p>Check out my GitHub Repositories below!</p>
-    <ul>
-    <li><a href="https://github.com/rudrachavda/rudraspython">GitHub Repository (Python)</a></li>
-    <li><a href="https://github.com/rudrachavda/highschool">GitHub Repository (Java)</a></li>
-    <li><a href="https://github.com/rudrachavda/AI-ML">GitHub Repository (AI | ML) - Coming soon!!</a></li>
-    </ul
-</div>  
 
-<!-- Contact Me section -->
-<div class="ContactMe" id="contact">
-    <h2 align="center" >Contact Me:</h2>
-    <p>If you'd like to get in touch with me, please feel free to email me at rudrabchavda@gmail.com. I look forward to hearing from you! If you would like too, also check out my linkedin profile for further information about myself</p>
-    <li><a href="https://www.linkedin.com/in/rudra-chavda-8769ab26a/">My Linkedin</a></li>
-</div>
-</body>x
+<!--------------------- Script --------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
 </html>
